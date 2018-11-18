@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AION Pay - Quick Transfer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!--TODO script Remove later-->
+    <script>
+        var global = global || window;
+    </script>
+    <script src="https://unpkg.com/aion-gql-webcomponents@0.0.14/dist/aion-gql-webcomponents.js"></script>
+
+
+    <style type="text/css">
+        div.container6 {
+            height: 10em;
+            display: flex;
+            align-items: center;
+            justify-content: center }
+        div.container6 p {
+            margin: 0 }
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            AION - Quick Transfer
+        </h1>
+        <p class="subtitle">
+            <strong>Quick Transfer</strong> is not a wallet. It just an interface between you and your wallet. It doesn't store anything. Transaction signing is done
+            locally or in your Ledger HD wallet. It then sends the encoded transaction and signature to AION kernel for processing.
+        </p>
+    </div>
+</section>
+
+<div class="container6">
+    <aion-pay to="" gql-url="https://api.aion-graphql.com/graphql" button-text=" Quick Transfer"></aion-pay>
+</div>
+
+</body>
+</html>
